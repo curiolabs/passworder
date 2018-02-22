@@ -1,6 +1,6 @@
 <?php
 
-namespace Ircop\Passworder\Facade;
+namespace CurioLabs\Passworder\Facade;
 #use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\Facades\Facade;
 
