@@ -1,7 +1,7 @@
 {
     "name": "curiolabs/passworder",
     "description": "Human-readable password generator",
-    "license": "GPLv2",
+    "license": "GPL-2.0+",
     "type": "",
     "keywords": ["laravel", "password", "password generator"],
     "authors": [
