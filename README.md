@@ -16,28 +16,28 @@ All options are in config file:
 
 ### 1: install via composer:
 ```
-composer require ircop/passworder
+composer require curiolabs/passworder
 ```
 
 ### 2: add service provider:
 
 Open `config/app.php`, and add to the `providers` array:
 ```
-Ircop\Passworder\PassworderServiceProvider::class,
+CurioLabs\Passworder\PassworderServiceProvider::class,
 ```
 
 ### 3: add facade alias:
 
 In the `config/app.php`. add to the `aliases` array:
 ```
-'Passworder' => Ircop\Passworder\Facade\Passworder::class,
+'Passworder' => CurioLabs\Passworder\Facade\Passworder::class,
 ```
 
 ### 4: Publishing config:
 
 Run in the console:
 ```
-./artisan vendor:publish --provider="Ircop\Passworder\PassworderServiceProvider"
+./artisan vendor:publish --provider="CurioLabs\Passworder\PassworderServiceProvider"
 ```
 Config will be moved to /config/passworder.php
 
