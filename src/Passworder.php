@@ -6,7 +6,7 @@
  * Time: 16:36
  */
 
-namespace Ircop\Passworder;
+namespace CurioLabs\Passworder;
 
 
 class Passworder
