@@ -1,4 +1,6 @@
-# Human-friendly password generator for Laravel 5.5
+# Human-friendly password generator 
+
+For Laravel 5.5
 
 Generates password from 2 parts: first is random, but well-readable string, seocnd is a word from dictionary.
 
