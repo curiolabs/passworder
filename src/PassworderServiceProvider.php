@@ -31,7 +31,9 @@ class PassworderServiceProvider extends ServiceProvider
         $this->mergeConfigFrom( __DIR__ . '/Config/passworder.php', 'passworder' );
 
         $this->app->singleton('passworder', function ($app) {
-            return new Passworder;
+            $return = $app->make('Ircop\Passworder\Passworder');
+            return $return;
         });
+        
     }
 }
