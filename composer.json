@@ -16,5 +16,15 @@
         "psr-4": {
             "CurioLabs\\Passworder\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CurioLabs\\Passworder\\PassworderServiceProvider"
+            ],
+            "aliases": {
+                "Passworder": "CurioLabs\\Passworder\\Facade\\Passworder"
+            }
+        }
     }
 }
