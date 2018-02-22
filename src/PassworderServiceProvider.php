@@ -1,6 +1,6 @@
 <?php
 
-namespace Ircop\Passworder;
+namespace CurioLabs\Passworder;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -31,7 +31,7 @@ class PassworderServiceProvider extends ServiceProvider
         $this->mergeConfigFrom( __DIR__ . '/Config/passworder.php', 'passworder' );
 
         $this->app->singleton('passworder', function ($app) {
-            $return = $app->make('Ircop\Passworder\Passworder');
+            $return = $app->make('CurioLabs\Passworder\Passworder');
             return $return;
         });
         
