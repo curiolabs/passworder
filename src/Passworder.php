@@ -42,13 +42,6 @@ class Passworder
         if( !is_numeric($chance) )
             return $string;
 
-        // commented, because not so friendly
-        //# before
-        //if( mt_rand(0, 10) < $chance ) {
-        //    $string = mt_rand(0,9).$string;
-        //}
-
-        # after
         if( mt_rand(0, 10) < $chance ) {
             $string = $string.mt_rand(0,9);
         }
@@ -108,7 +101,7 @@ class Passworder
             $v[$x] = substr( $vowels, mt_rand(0, strlen($vowels) - 1 ), 1 );
         }
 
-        $str = $c[0] . $v[0] . $c[2] . $c[1] . $v[1];
+        $str = $c[0] . $v[0] . $this->getDelimeter() . $c[2] . mt_rand(0,9) . $c[1] . $v[1];
         return $this->randomize($str);
     }
 }
