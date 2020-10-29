@@ -188,7 +188,6 @@ return [
         'point',
         'porter',
         'print',
-        'sex',
         'sleep',
         'start',
         'surprise',
